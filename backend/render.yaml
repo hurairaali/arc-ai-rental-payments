@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: arc-real-estate-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: MONGODB_URI
+        sync: false
+      - key: CIRCLE_API_KEY
+        sync: false
+      - key: CIRCLE_ENTITY_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: CIRCLE_OWNER_WALLET_ID
+        sync: false
+      - key: CIRCLE_OWNER_ADDRESS
+        sync: false
+      - key: CIRCLE_TENANT_WALLET_ID
+        sync: false
+      - key: CIRCLE_TENANT_ADDRESS
+        sync: false
+      - key: ARC_RPC_URL
+        value: https://rpc-testnet.arc.xyz
+      - key: PROPERTY_TOKEN_ADDRESS
+        value: 0xae83572944d669c74bedfd9fcfda95131cdb7e62
+      - key: PAYMENT_MANAGER_ADDRESS
+        value: 0x1532afa772ca3f09225370ef5beab05172243e3b
+

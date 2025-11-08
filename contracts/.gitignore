@@ -1,0 +1,15 @@
+# Hardhat
+cache/
+artifacts/
+typechain/
+coverage/
+coverage.json
+
+# Environment
+.env
+
+
+
+
+
+

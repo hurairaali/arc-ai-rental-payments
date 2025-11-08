@@ -1,0 +1,27 @@
+{
+  "name": "real-estate-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Real Estate Rental Payment System",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:payment-manager": "hardhat run scripts/deploy-payment-manager.js --network arcTestnet",
+    "deploy:local": "hardhat run scripts/deploy.js",
+    "deploy:circle": "node scripts/deploy-with-circle.js",
+    "setup:circle": "node scripts/deploy-with-circle.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "ethers": "^6.8.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "^9.2.1",
+    "@circle-fin/smart-contract-platform": "^9.2.1",
+    "@openzeppelin/contracts": "^5.0.0",
+    "axios": "^1.13.2",
+    "dotenv": "^16.6.1"
+  }
+}
